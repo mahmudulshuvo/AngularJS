@@ -44,6 +44,7 @@ input[type=text2], select {
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+    font-size: 18px;
 }
 
 input[type=submit]:hover {
