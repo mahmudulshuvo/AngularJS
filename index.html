@@ -1,0 +1,66 @@
+<html ng-app="myApp">
+    <script src="script/angular.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <body>
+        <div class="container" ng-controller="Ctrler">
+            <div>
+                <input type="submit" value="Submit" ng-click="copyText()">
+                <input type="submit" value="Clear" ng-click="clearText()">
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    <form novalidate class="simple-form">
+                        <input type="text" ng-model="sa"  />
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-6">
+                    <form novalidate class="simple-form">
+                        <input type="text" ng-model="ba" />
+                    </form>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-lg-6">
+                    <form novalidate class="simple-form">
+                        <input type="text" ng-model="ba"  />
+                    </form>
+                </div>
+            </div>
+
+            <p id="demo"></p>
+        </div>
+
+
+        <!-- <script>
+             var myAppModule = angular.module('myApp', [])
+             myAppModule.controller('Ctrler', function($scope) {
+
+                $scope.copyText = function() {
+                    if ($scope.sa == null) {
+                        document.getElementById("demo").innerHTML = "Please input text!"
+                    }
+                    else {
+                        document.getElementById("demo").innerHTML = "Copy Text"
+                        $scope.ba = angular.copy($scope.sa);
+                    }
+
+                };
+
+                $scope.clearText = function() {
+                    document.getElementById("demo").innerHTML = "Clear Text"
+                    $scope.sa = null;
+                    $scope.ba = null;
+                }
+             });
+        </script> -->
+
+    </body>
+</html>
