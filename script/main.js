@@ -16,7 +16,7 @@ myAppModule.controller('Ctrler', function($scope) {
 
    $scope.clearText = function() {
        document.getElementById("demo").innerHTML = "Clear Text"
-       $scope.sa = null;
-       $scope.ba = null;
+       $scope.sa = undefined;
+       $scope.ba = undefined;
    }
 });
