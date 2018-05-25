@@ -4,7 +4,7 @@ var myAppModule = angular.module('myApp', [])
 myAppModule.controller('Ctrler', function($scope) {
 
    $scope.copyText = function() {
-       if ($scope.sa == null) {
+       if (!$scope.sa) {
            document.getElementById("demo").innerHTML = "Please input text!"
        }
        else {
