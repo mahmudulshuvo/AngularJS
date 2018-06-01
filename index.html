@@ -18,8 +18,8 @@
 
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-lg-12">
-                    <form action="/action_page.php" novalidate class="simple-form">
-                        <input type="text" ng-model="sa" placeholder="Input your text here..." />
+                     <form action="/action_page.php" novalidate class="simple-form">
+                        <textarea class="form-control" rows="10" ng-model="sa" placeholder="Input your text here..."></textarea>
                     </form>
                 </div>
             </div>
@@ -27,18 +27,22 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-lg-6">
                     <form novalidate class="simple-form">
-                        <input type="text" ng-model="ba" />
+                        <textarea class="form-control" rows="10" ng-model="ba"></textarea>
                     </form>
                 </div>
 
                 <div class="col-md-12 col-sm-12 col-lg-6">
                     <form novalidate class="simple-form">
-                        <input type="text" ng-model="ba"  />
+                        <textarea class="form-control" rows="10" ng-model="ba"></textarea>
                     </form>
                 </div>
             </div>
 
-            <p id="demo"></p>
+            <div class="d-flex justify-content-between w-100">
+                <p class="alignleft" id="left">Left</p>
+                <p class="alignright" id="right">Right</p>
+            </div>
+
         </div>
     </body>
 </html>
